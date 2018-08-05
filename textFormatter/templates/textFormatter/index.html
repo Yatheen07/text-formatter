@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Text Formatter</title>
+  
+  {% load staticfiles %}
+  
+  <link rel="stylesheet" href="{% static 'textFormatter/css/bootstrap.css' %}">
+  <script src="{% static 'textFormatter/js/jquery-3.3.1.min.js' %}"></script>
+  <script src="{% static 'textFormatter/js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'textFormatter/js/userDefinedScripts.js' %}"></script>
+
+  </head>
+<body>
+
+<div class="card" style="margin:10px">
+  <div class="card-header">Type your text below</div>
+  <div class="card-body">
+  
+    <div class="row">
+		<div class="col-sm-2"></div>
+		<div class="col-sm-8">
+		
+			<div class="form-group">
+				<input class="form-control input-lg" id="inputlg" type="text">
+			</div>
+			
+			
+			<p id="target"></p>
+			
+	  	  
+		</div>
+		<div class="col-sm-2"></div>
+	</div>
+	
+	<br />
+	<br />
+  
+  </div> 
+  
+</div>
+
+<br />
+<br />
+
+
+
+
+
+		<div class="row">
+			<div class="col-sm-2"></div>
+				<div class="col-sm-8">
+				
+					<div class="card">
+						<div class="card-header" style="background:#39a81a;color:white">Follow these Instructions</div>
+							<div class="card-body">
+			
+								<table class="table table-striped">
+									<thead>
+									  <tr>
+										<th>Format</th>
+										<th>Pattern</th>
+										
+									  </tr>
+									</thead>
+									<tbody>
+									  <tr>
+										<td>Bold Text</td>
+										<td>** Content **</td> 
+									  </tr>
+									  <tr>
+										<td>Italics Text</td>
+										<td>\\ Content \\</td>
+
+									  </tr>
+									  <tr>
+										<td>Underline Text</td>
+										<td>__ Content __</td>
+									  </tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+				  
+					</div>
+				<div class="col-sm-2"></div>
+		</div>
+	
+	
+	<br />
+	<br />
+	<br />
+	<br />
+	
+	
+	<center><p>Code to this implementation is <a href="http://www.google.com">here</a></p></center>
+	  
+  
+  
+       
+
+
+</body>
+</html>
